@@ -27,6 +27,8 @@ _vehicleColor = SEL(SEL(M_CONFIG(getArray,CONFIG_LIFE_VEHICLES,_classNameLife,"t
 if(isNil "_vehicleColor") then {_vehicleColor = "Default";};
  
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
+diag_log "LOOK HERE YOU FUCKING IDIOT";
+diag_log _vehicleInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
  
 _retrievePrice = switch(playerSide) do {
