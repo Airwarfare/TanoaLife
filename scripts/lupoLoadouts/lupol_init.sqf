@@ -232,12 +232,9 @@ lupol_mainScript = {
 			} forEach (_toolsItems);
 	};
 };
+};
 
-
-
-{
-	_x call lupol_addLoadoutActions;
-} forEach lupol_actionObjects;
+{ _x call lupol_addLoadoutActions; } forEach lupol_actionObjects;
 
 [] spawn lupol_mainScript;
 

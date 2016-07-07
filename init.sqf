@@ -2,7 +2,7 @@ StartProgress = false;
 
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
-[] execVM 'scripts\lupoLoadouts\lupol_init.sqf';
+//[] execVM 'scripts\lupoLoadouts\lupol_init.sqf';
 [
 	15*60, // seconds to delete dead bodies (0 means don't delete) 
 	0, // seconds to delete dead vehicles (0 means don't delete)
