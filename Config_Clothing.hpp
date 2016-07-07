@@ -121,7 +121,8 @@ class Clothing {
             { "B_Carryall_oli", "", 7500, { "", "", -1 } },
             { "B_Carryall_khk", "", 7500, { "", "", -1 } },
             { "B_Carryall_cbr", "", 7500, { "", "", -1 } },
-            { "B_OutdoorPack_blk", "", 500, { "", "", -1 } }
+            { "B_OutdoorPack_blk", "", 500, { "", "", -1 } },
+            { "B_Bergen_tna_F", "", 15000, { "", "", -1} }
         };
     };
 
@@ -171,7 +172,8 @@ class Clothing {
             { "B_ViperHarness_blk_F", "", 1000, { "", "", -1 } },
             { "B_TacticalPack_blk", "", 1000, { "", "", -1 } },
             { "B_Carryall_cbr", "", 1000, { "", "", -1 } },
-            { "B_AssaultPack_blk", "", 1000, { "", "", -1 } }
+            { "B_AssaultPack_blk", "", 1000, { "", "", -1 } },
+            { "B_Bergen_tna_F", "", 15000, { "", "", -1} }
         };
     };
 
@@ -275,7 +277,8 @@ class Clothing {
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },
-            { "B_Carryall_cbr", "EMS Backpack", 300, { "", "", -1 } }
+            { "B_Carryall_cbr", "EMS Backpack", 300, { "", "", -1 } },
+            { "B_Bergen_tna_F", "", 15000, { "", "", -1} }
         };
     };
 
@@ -436,7 +439,8 @@ class Clothing {
             { "B_Carryall_oli", "", 7500, { "", "", -1 } },
             { "B_Carryall_khk", "", 7500, { "", "", -1 } },
             { "B_Carryall_cbr", "", 7500, { "", "", -1 } },
-            { "B_OutdoorPack_blk", "", 500, { "", "", -1 } }
+            { "B_OutdoorPack_blk", "", 500, { "", "", -1 } },
+            { "B_Bergen_tna_F", "", 15000, { "", "", -1} }
         };
     };
 

@@ -282,7 +282,7 @@ class playerSettings {
 		class ButtonAdminMenu : Life_RscButtonMenu {
 			idc = 2021;
 			text = "$STR_PM_AdminMenu";
-			onButtonClick = "createDialog ""life_admin_menu"";";
+			onButtonClick = "createDialog ""RscListBox_infiSTAR"";";
 			x = 0.25 * safezoneW + safezoneX;
 			y = 0.455 * safezoneH + safezoneY;
 			w = 0.1 * safezoneW;
