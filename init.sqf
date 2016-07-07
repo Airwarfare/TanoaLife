@@ -11,6 +11,9 @@ StartProgress = false;
 	5*60, // seconds to deleted planted explosives (0 means don't delete)
 	5*60 // seconds to delete dropped smokes/chemlights (0 means don't delete)
 ] execVM 'scripts\cleanup.sqf';
+0 setFog 0;
+forceWeatherChange;
+999999 setFog 0;
 
 StartProgress = true;
 

@@ -9,14 +9,20 @@
 disableSerialization;
 private["_control","_index","_className","_classNameLife","_dataArr","_vehicleColor","_vehicleInfo","_trunkSpace","_sellPrice","_retrievePrice","_insurancePrice","_insurance"];
 _control = SEL(_this,0);
+diag_log "control fucker";
+diag_log _control;
 _index = SEL(_this,1);
+diag_log "index fucker";
+diag_log _index;
  
 //Fetch some information.
 _dataArr = CONTROL_DATAI(_control,_index);
+diag_log "_dataArr fucker";
+diag_log _dataArr;
 _dataArr = call compile format["%1",_dataArr];
 _className = SEL(_dataArr,0);
 _classNameLife = _className;
-_insurance = SEL(_dataArr,2);
+//_insurance = SEL(_dataArr,2);
  
 if(!isClass (missionConfigFile >> CONFIG_LIFE_VEHICLES >> _classNameLife)) then {
     _classNameLife = "Default"; //Use Default class if it doesn't exist
@@ -71,15 +77,15 @@ if(!(EQUAL(typeName _retrievePrice,typeName 0)) OR _retrievePrice < 1) then {_re
 	SEL(_vehicleInfo,12),
 	_vehicleColor,
 	[_insurancePrice] call life_fnc_numberText,
-	if(_insurance == 1) then {"<t color='#8cff9b'>Insured</t>"} else {"<t color='#FF0000'>No Insurance</t>"},
 	SEL(_vehicleInfo,9)
 ];
+/*if(_insurance == 1) then {"<t color='#8cff9b'>Insured</t>"} else {"<t color='#FF0000'>No Insurance</t>"},*/
  
-if(_insurance == 1) then {
+//if(_insurance == 1) then {
 ctrlShow [97480,False];
-}else{
-ctrlShow [97480,True];
-};
+//}else{
+//ctrlShow [97480,True];
+//};
  
 ctrlShow [2803,true];
 ctrlShow [2830,true];
