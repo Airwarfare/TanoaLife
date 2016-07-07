@@ -21,7 +21,8 @@ switch (_side) do {
 			["cop_spawn_4","Katkoula HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["cop_spawn_5","Tuvanaka HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["cop_spawn_6","Air HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_7","Coast Guard","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
+			["cop_spawn_7","Coast Guard","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
+			["cop_spawn_8","Checkpoint", "\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 	};
 	
