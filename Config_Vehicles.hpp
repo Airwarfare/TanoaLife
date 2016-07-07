@@ -117,7 +117,8 @@ class CarShops {
         side = "cop";
         vehicles[] = {
             { "B_Heli_Light_01_F", 50000, { "cAir" }, { "life_coplevel", "SCALAR", 2 } },
-            { "B_Heli_Transport_01_F", 100000, { "cAir" }, { "life_coplevel", "SCALAR", 3 } }
+            { "B_Heli_Transport_01_F", 100000, { "cAir" }, { "life_coplevel", "SCALAR", 3 } },
+            { "B_T_VTOL_01_armed_F", 5000000, {"cAir"}, { "life_coplevel", "SCALAR", 4 } }
         };
     };
 
@@ -395,6 +396,15 @@ class LifeCfgVehicles {
         insurance = 10000;
         chopShop = 250000;
         textures[] = { };
+    };
+
+    class B_T_VTOL_01_armed_F {
+    	vItemSpace = 400;
+    	storageFee[] = { 0, 0, 0, 0 };
+    	garageSell[] = { 0, 0, 0, 0 };
+    	insurance = 40000;
+    	chopShop = 0;
+    	textures[] = { };
     };
 
     class O_MRAP_02_F {
