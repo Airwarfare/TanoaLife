@@ -54,7 +54,5 @@ _armor = FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,_class,"armor");
 _seats = FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,_class,"transportSoldier");
 _hp = FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,_class,"enginePower");
 _fuel = FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,_class,"fuelCapacity");
-diag_log "all the vehicle info should be below";
-diag_log [_class,_scope,_picture,_displayName,_vehicleClass,_side,_faction,_superClass,_speed,_armor,_seats,_hp,_fuel];
 //Return
 [_class,_scope,_picture,_displayName,_vehicleClass,_side,_faction,_superClass,_speed,_armor,_seats,_hp,_fuel];
