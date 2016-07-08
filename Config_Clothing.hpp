@@ -316,18 +316,18 @@ class Clothing {
 			{ "U_B_Commander_F", "", 500, { "", "", -1 } },
 			{ "U_O_T_Soldier_F", "", 500, { "", "", -1 } },
 			{ "U_O_T_Officer_F", "", 500, { "", "", -1 } },
-			{ "U_O_V_Soldier_Viper_F", "", 750, { "", "", -1 } },
-			{ "U_O_V_Soldier_Viper_hex_F", "", 750, { "", "", -1 } },
+			{ "U_O_V_Soldier_Viper_F", "", 20000, { "", "", -1 } },
+			{ "U_O_V_Soldier_Viper_hex_F", "", 20000, { "", "", -1 } },
 			{ "U_I_C_Soldier_Para_2_F", "", 500, { "", "", -1 } },
 			{ "U_I_C_Soldier_Camo_F", "", 500, { "", "", -1 } },
-			{ "U_O_T_FullGhillie_tna_F", "", 1000, { "", "", -1 } },
-			{ "U_O_T_Sniper_F", "", 1000, { "", "", -1 } },
-			{ "U_B_T_FullGhillie_tna_F", "", 1000, { "", "", -1 } },
-			{ "U_B_T_Sniper_F", "", 1000, { "", "", -1 } },
-			{ "U_O_GhillieSuit", "", 1000, { "", "", -1 } },
-			{ "U_B_FullGhillie_lsh", "", 1000, { "", "", -1 } },
-			{ "U_B_FullGhillie_sard", "", 1000, { "", "", -1 } },
-			{ "U_B_FullGhillie_ard", "", 1000, { "", "", -1 } }
+			{ "U_O_T_FullGhillie_tna_F", "", 20000, { "", "", -1 } },
+			{ "U_O_T_Sniper_F", "", 20000, { "", "", -1 } },
+			{ "U_B_T_FullGhillie_tna_F", "", 20000, { "", "", -1 } },
+			{ "U_B_T_Sniper_F", "", 20000, { "", "", -1 } },
+			{ "U_O_GhillieSuit", "", 20000, { "", "", -1 } },
+			{ "U_B_FullGhillie_lsh", "", 20000, { "", "", -1 } },
+			{ "U_B_FullGhillie_sard", "", 20000, { "", "", -1 } },
+			{ "U_B_FullGhillie_ard", "", 20000, { "", "", -1 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
@@ -351,8 +351,8 @@ class Clothing {
 			{ "H_PilotHelmetHeli_B", "", 500, { "", "", -1 } },
 			{ "H_CrewHelmetHeli_B", "", 700, { "", "", -1 } },
 			{ "H_HelmetB_TI_tna_F", "", 800, { "", "", -1 } },
-			{ "H_HelmetO_ViperSP_hex_F", "", 1000, { "", "", -1 } },
-			{ "H_HelmetO_ViperSP_ghex_F", "", 1000, { "", "", -1 } },
+			{ "H_HelmetO_ViperSP_hex_F", "", 40000, { "", "", -1 } },
+			{ "H_HelmetO_ViperSP_ghex_F", "", 40000, { "", "", -1 } },
 			{ "H_HelmetB_Enh_tna_F", "", 500, { "", "", -1 } },
 			{ "H_HelmetB_Light_tna_F", "", 500, { "", "", -1 } },
 			{ "H_HelmetCrew_O_ghex_F", "", 700, { "", "", -1 } }
@@ -380,7 +380,8 @@ class Clothing {
             { "G_Bandanna_oli", "", 150, { "", "", -1 } },
             { "G_Bandanna_shades", "", 150, { "", "", -1 } },
             { "G_Bandanna_sport", "", 150, { "", "", -1 } },
-            { "G_Bandanna_tan", "", 150, { "", "", -1 } }
+            { "G_Bandanna_tan", "", 150, { "", "", -1 } },
+            { "G_Balaclava_TI_blk_F", "", 3000, { "", "", -1} }
         };
         vests[] = {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },

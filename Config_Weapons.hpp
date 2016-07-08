@@ -121,7 +121,7 @@ class WeaponShops {
             { "10Rnd_127x54_Mag", "", 30 },
             { "30Rnd_762x39_Mag_F", "", 30 },
             { "30Rnd_545x39_Mag_F", "", 30 }
-           
+            
         };
     };
 
@@ -306,7 +306,8 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_green", "", 50 },
             { "30Rnd_556x45_Stanag", "", 50 },
             { "20Rnd_762x51_Mag", "", 50 },
-            { "30Rnd_65x39_caseless_mag", "", 50 }
+            { "30Rnd_65x39_caseless_mag", "", 50 },
+            { "10Rnd_50BW_Mag_F", "", 50 }
         };
     };
  
@@ -337,7 +338,8 @@ class WeaponShops {
             { "20Rnd_650x39_Cased_Mag_F", "", 50 },
             { "20Rnd_762x51_Mag", "", 50 },
             { "10Rnd_93x64_DMR_05_Mag", "", 50 },
-            { "30Rnd_580x42_mag_F", "", 50 }
+            { "30Rnd_580x42_mag_F", "", 50 },
+            { "10Rnd_50BW_Mag_F", "", 50 }
         };
     };  
  
@@ -434,7 +436,8 @@ class WeaponShops {
 			{ "150Rnd_556x45_Drum_Mag_F", "", 50 },
 			{ "150Rnd_556x45_Drum_Mag_F", "", 50 },
 			{ "200Rnd_556x45_Box_F", "", 50 },
-			{ "10Rnd_338_Mag", "", 50 }
+			{ "10Rnd_338_Mag", "", 50 },
+            { "10Rnd_50BW_Mag_F", "", 50 }
         };
     }; 
 
