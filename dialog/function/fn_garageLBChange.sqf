@@ -73,7 +73,7 @@ if(!(EQUAL(typeName _retrievePrice,typeName 0)) OR _retrievePrice < 1) then {_re
 	SEL(_vehicleInfo,10),
 	if(_trunkSpace == -1) then {"None"} else {_trunkSpace},
 	SEL(_vehicleInfo,12),
-	_vehicleColor
+	_vehicleColor,
 ];
 /**/
  
