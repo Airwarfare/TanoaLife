@@ -45,7 +45,8 @@ if((GVAR_UINS ["Weapon_Shop_Filter",0]) == 1) then {
 			} else {
 				((findDisplay 38400) displayCtrl 38406) ctrlEnable false;
 			};
-	} else {
+	} 
+	else {
 		((findDisplay 38400) displayCtrl 38406) ctrlEnable true;
 	};
 };

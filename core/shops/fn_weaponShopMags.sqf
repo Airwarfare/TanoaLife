@@ -10,7 +10,7 @@ disableSerialization;
 
 if((GVAR_UINS ["Weapon_Magazine",0]) == 0) then {
 	private["_weapon"];
-	_weapon = lbData[38403,lbCurSel (38403)];
+	_weapon = currentWeapon player;
 	if(_weapon == "arifle_ARX_blk_F") then
 	{
 		_weapon = FETCH_CONFIG2(getArray,"CfgWeapons",_weapon,"magazines");

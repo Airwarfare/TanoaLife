@@ -210,7 +210,6 @@ class Life_Client_Core
 		class nlrSetup {};
 		class nlrCheck {};
 		class nlrMarkerSetup {};
-		class getAccessories {};
 	};
 
 	class Network
@@ -326,6 +325,7 @@ class Life_Client_Core
 		class weaponShopSelection {};
 		class weaponShopBuySell {};
 		class weaponShopMags {};
+		class weaponShopAccessories {};
 		class virt_buy {};
 		class virt_menu {};
 		class virt_update {};
