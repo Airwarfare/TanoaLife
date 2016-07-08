@@ -1,3 +1,4 @@
+#include "..\..\script_macros.hpp"
 private["_nlrRadius"];
 
 _nlrRadius = (LIFE_SETTINGS(getNumber,"nlr_radius"));
