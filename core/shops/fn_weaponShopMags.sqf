@@ -11,18 +11,17 @@ disableSerialization;
 if((GVAR_UINS ["Weapon_Magazine",0]) == 0) then {
 	private["_weapon"];
 	_weapon = lbData[38403,lbCurSel (38403)];
-	if(_weapon == "arifle_ARX_blk_F")
+	if(_weapon == "arifle_ARX_blk_F") then
 	{
 		_weapon = FETCH_CONFIG2(getArray,"CfgWeapons",_weapon,"magazines");
 		_mag = ["10Rnd_50BW_Mag_F"];
-		_weapon = _weapon + _mag; hint format ["%1", _weapon];
+		_weapon = _weapon + _mag;
 		uiNamespace setVariable["Magazine_Array",_weapon];
 		uiNamespace setVariable["Weapon_Magazine",1];
-	} else 
-	{
-			_weapon = FETCH_CONFIG2(getArray,"CfgWeapons",_weapon,"magazines");
-			uiNamespace setVariable["Magazine_Array",_weapon];
-			uiNamespace setVariable["Weapon_Magazine",1];
+	} else {
+		_weapon = FETCH_CONFIG2(getArray,"CfgWeapons",_weapon,"magazines");
+		uiNamespace setVariable["Magazine_Array",_weapon];
+		uiNamespace setVariable["Weapon_Magazine",1];
 	};
 } else {
 	uiNamespace setVariable["Weapon_Magazine",0];
