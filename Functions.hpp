@@ -210,6 +210,7 @@ class Life_Client_Core
 		class nlrSetup {};
 		class nlrCheck {};
 		class nlrMarkerSetup {};
+		class getAccessories {};
 	};
 
 	class Network
