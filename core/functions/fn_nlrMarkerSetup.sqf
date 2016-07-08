@@ -1,3 +1,4 @@
+#include "..\..\script_macros.hpp"
 private["_nlrArea","_nlrWarning","_nlrRadius"];
 if(playerSide in [west,civilian]) then {
 	if((getMarkerColor "NLRArea" != "") && (getMarkerColor "NLRWarning" != "")) then {

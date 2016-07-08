@@ -58,7 +58,7 @@ class Life_Settings {
     noatm_timer = 5; //Time in minutes that players won't be able to deposit his money after selling stolen gold
 	
 	/* New Life Rule settings */
-    nlr_timer = 15; //Time from death that players can't return within nlr_radius
+    nlr_timer = 5; //Time from death that players can't return within nlr_radius
 	nlr_radius = 1000; //Distance from last death players can't enter
 
     /* Spyglass settings */

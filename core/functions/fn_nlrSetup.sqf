@@ -1,3 +1,4 @@
+#include "..\..\script_macros.hpp"
 if(playerSide in [west,civilian]) then {
 	if((getMarkerColor "NLRArea" != "") && (getMarkerColor "NLRWarning" != "")) then {
 		[] spawn life_fnc_nlrTimer;
