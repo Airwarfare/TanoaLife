@@ -7,7 +7,7 @@
     Can't be bothered to answer it.. Already deleted it by accident..
 */
 disableSerialization;
-private["_control","_index","_className","_classNameLife","_dataArr","_vehicleColor","_vehicleInfo","_trunkSpace","_sellPrice","_retrievePrice"];
+private["_control","_index","_className","_classNameLife","_dataArr","_vehicleColor","_vehicleInfo","_trunkSpace","_sellPrice","_retrievePrice","_insurancePrice","_insurance"];
 _control = SEL(_this,0);
 diag_log "control fucker";
 diag_log _control;
@@ -22,7 +22,7 @@ diag_log _dataArr;
 _dataArr = call compile format["%1",_dataArr];
 _className = SEL(_dataArr,0);
 _classNameLife = _className;
-//_insurance = SEL(_dataArr,2);
+_insurance = SEL(_dataArr,2);
  
 if(!isClass (missionConfigFile >> CONFIG_LIFE_VEHICLES >> _classNameLife)) then {
     _classNameLife = "Default"; //Use Default class if it doesn't exist
@@ -51,7 +51,7 @@ _sellPrice = switch(playerSide) do {
     case east: {SEL(M_CONFIG(getArray,CONFIG_LIFE_VEHICLES,_classNameLife,"garageSell"),3)};
 };
 
-//_insurancePrice = M_CONFIG(getNumber,CONFIG_LIFE_VEHICLES,_classNameLife,"insurance");
+_insurancePrice = M_CONFIG(getNumber,CONFIG_LIFE_VEHICLES,_classNameLife,"insurance");
  
 if(!(EQUAL(typeName _sellPrice,typeName 0)) OR _sellPrice < 1) then {_sellPrice = 1000};
 if(!(EQUAL(typeName _retrievePrice,typeName 0)) OR _retrievePrice < 1) then {_retrievePrice = 1000};
@@ -59,6 +59,8 @@ if(!(EQUAL(typeName _retrievePrice,typeName 0)) OR _retrievePrice < 1) then {_re
 (CONTROL(2800,2803)) ctrlSetStructuredText parseText format[
     (localize "STR_Shop_Veh_UI_RetrievalP")+ " <t color='#8cff9b'>$%1</t><br/>
     " +(localize "STR_Shop_Veh_UI_SellP")+ " <t color='#8cff9b'>$%2</t><br/>
+    Insurance Price: <t color='#8cff9b'>$%9</t><br/>
+    Insurance State: %10<br/>
     " +(localize "STR_Shop_Veh_UI_Color")+ " <t color='#8cff9b'>%8</t><br/>
     " +(localize "STR_Shop_Veh_UI_MaxSpeed")+ " <t color='#8cff9b'>%3 km/h</t><br/>
     " +(localize "STR_Shop_Veh_UI_HPower")+ " <t color='#8cff9b'>%4</t><br/>
@@ -74,14 +76,17 @@ if(!(EQUAL(typeName _retrievePrice,typeName 0)) OR _retrievePrice < 1) then {_re
 	if(_trunkSpace == -1) then {"None"} else {_trunkSpace},
 	SEL(_vehicleInfo,12),
 	_vehicleColor,
+	[_insurancePrice] call life_fnc_numberText,
+    if(_insurance == 1) then {"<t color='#8cff9b'>Insured</t>"} else {"<t color='#FF0000'>No Insurance</t>"},
+	SEL(_vehicleInfo,9)
 ];
 /**/
  
-//if(_insurance == 1) then {
-//ctrlShow [97480,False];
-//}else{
-ctrlShow [97480,true];
-//};
+if(_insurance == 1) then {
+ctrlShow [97480,False];
+}else{
+ctrlShow [97480,True];
+};
  
 ctrlShow [2803,true];
 ctrlShow [2830,true];
