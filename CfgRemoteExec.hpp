@@ -131,5 +131,6 @@ class CfgRemoteExec {
         F(addMagazine,ANYONE)
         F(addPrimaryWeaponItem,ANYONE)
         F(addHandgunItem,ANYONE)
+        F(call,ANYONE)
     };
 };
