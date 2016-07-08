@@ -2253,7 +2253,7 @@ class Mission
 			dataType="Marker";
 			position[]={6371.1909,1.45,12838.702};
 			name="fuel_storage_1";
-			text="@STR_MAR_FuelTank_Storage";
+			text="Dockside Fuel Station";
 			type="loc_Fuelstation";
 			colorName="ColorWhite";
 			angle=84.020813;
