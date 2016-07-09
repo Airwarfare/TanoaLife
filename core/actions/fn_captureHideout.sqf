@@ -6,7 +6,9 @@
 	Blah blah.
 */
 private["_group","_hideout","_action","_cpRate","_cP","_progressBar","_title","_titleText","_ui","_flagTexture"];
-_hideout = (nearestObjects[getPosATL player,["Land_u_Barracks_V2_F","Land_i_Barracks_V2_F"],25]) select 0;
+_hideout = (nearestObjects[player,["Land_u_Barracks_V2_F","Land_i_Barracks_V2_F"],40]) select 0;
+diag_log "Hideout";
+diag_log _hideout;
 _group = _hideout GVAR ["gangOwner",grpNull];
 _cpRate = 0.0075;
 if(isNil {grpPlayer GVAR "gang_name"}) exitWith {titleText[localize "STR_GNOTF_CreateGang","PLAIN"];};

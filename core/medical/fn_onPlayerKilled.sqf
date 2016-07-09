@@ -57,7 +57,8 @@ _unit spawn {
 };
 
 [] spawn life_fnc_deathScreen;
-[] spawn life_fnc_nlrMarkerSetup;
+//[] spawn life_fnc_nlrMarkerSetup;
+
 
 //Create a thread to follow with some what precision view of the corpse.
 [_unit] spawn {
