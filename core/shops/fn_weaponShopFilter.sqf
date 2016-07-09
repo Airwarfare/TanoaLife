@@ -36,7 +36,22 @@ if((GVAR_UINS ["Weapon_Magazine",0]) == 1) then {
 	ctrlShow [38402,false];
 	ctrlShow [38406,true];
 }
-else {
+if((GVAR_UINS ["Weapon_Accessories",0]) == 1) then {
+	_config = M_CONFIG(getArray,"WeaponShops",_shop,"accessories");
+	{
+		if(SEL(_x,0) in (uiNamespace getVariable ["Accessories_Array",[]])) then {
+			_itemInfo = [SEL(_x,0)] call life_fnc_fetchCfgDetails;
+			_itemList lbAdd format["%1",if(!(EQUAL(SEL(_x,1),""))) then {SEL(_x,1)} else {_itemInfo select 1}];
+			_itemList lbSetData[(lbSize _itemList)-1,_itemInfo select 0];
+			_itemList lbSetPicture[(lbSize _itemList)-1,_itemInfo select 2];
+			_itemList lbSetValue[(lbSize _itemList)-1,SEL(_x,2)];
+		};
+	} foreach (_config);
+
+	ctrlShow [38402,false];
+	ctrlShow [38407,true];
+};
+if (((GVAR_UINS ["Weapon_Accessories",0]) == 0) && ((GVAR_UINS ["Weapon_Magazine",0]) == 0)) then {
 	switch (_index) do {
 		case 0: {
 			_config = M_CONFIG(getArray,"WeaponShops",_shop,"items");
@@ -98,21 +113,6 @@ else {
 			} foreach _config;
 		};
 	};
-};
-if((GVAR_UINS ["Weapon_Accessories",0]) == 1) then {
-	_config = M_CONFIG(getArray,"WeaponShops",_shop,"accessories");
-	{
-		if(SEL(_x,0) in (uiNamespace getVariable ["Accessories_Array",[]])) then {
-			_itemInfo = [SEL(_x,0)] call life_fnc_fetchCfgDetails;
-			_itemList lbAdd format["%1",if(!(EQUAL(SEL(_x,1),""))) then {SEL(_x,1)} else {_itemInfo select 1}];
-			_itemList lbSetData[(lbSize _itemList)-1,_itemInfo select 0];
-			_itemList lbSetPicture[(lbSize _itemList)-1,_itemInfo select 2];
-			_itemList lbSetValue[(lbSize _itemList)-1,SEL(_x,2)];
-		};
-	} foreach (_config);
-
-	ctrlShow [38402,false];
-	ctrlShow [38407,true];
 }; 
 
 ((findDisplay 38400) displayCtrl 38403) lbSetCurSel 0;
