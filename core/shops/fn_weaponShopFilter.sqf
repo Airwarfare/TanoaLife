@@ -35,7 +35,7 @@ if((GVAR_UINS ["Weapon_Magazine",0]) == 1) then {
 	((findDisplay 38400) displayCtrl 38406) ctrlSetText localize "STR_Global_Weapons";
 	ctrlShow [38402,false];
 	ctrlShow [38406,true];
-}
+};
 if((GVAR_UINS ["Weapon_Accessories",0]) == 1) then {
 	_config = M_CONFIG(getArray,"WeaponShops",_shop,"accessories");
 	{
