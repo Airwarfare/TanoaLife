@@ -14,7 +14,7 @@ StartProgress = false;
 0 setFog 0;
 forceWeatherChange;
 999999 setFog 0;
-if(!isServer) then {null=[player,100,11,10,3,7,-0.3,0.1,0.5,1,1,1,13,12,15,true,2,2.1,0.1,4,6,0,3.5,17.5] execFSM "scripts\Fog.fsm";}
+if(!isServer) then {null=[player,100,11,10,3,7,-0.3,0.1,0.5,1,1,1,13,12,15,true,2,2.1,0.1,4,6,0,3.5,17.5] execFSM "scripts\Fog.fsm";};
 
 StartProgress = true;
 
