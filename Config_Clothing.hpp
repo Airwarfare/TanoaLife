@@ -412,7 +412,8 @@ class Clothing {
 			{ "V_PlateCarrierGL_blk", "", 1000, { "", "", -1 } },
 			{ "V_PlateCarrierSpec_blk", "", 1000, { "", "", -1 } },
 			{ "V_PlateCarrierGL_mtp", "", 1000, { "", "", -1 } },
-			{ "V_PlateCarrierSpec_mtp", "", 1000, { "", "", -1 } }
+			{ "V_PlateCarrierSpec_mtp", "", 1000, { "", "", -1 } },
+            { "V_Press_F","Suicide Vest", 100000, {"","",-1} }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },

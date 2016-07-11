@@ -103,7 +103,7 @@ class FSM
        "_size = _msize + random (_xsize - _msize);" \n
        "_randomdir = random 360;" \n
        "_lifetime = _mlifetime + random (_xlifetime - _mlifetime);" \n
-       "drop [""\ca\data\cl_basic"","""",""Billboard"",_spawn,_lifetime,[(_Pos select 0)+_radius*sin _randomdir,(_Pos select 1)+_radius*cos _randomdir,_height],[_right,_forward,_up],5,0.2,0.1568,0,[_size],[[_col1,_col2,_col3,0],_CC,_CC,_CC,_CC,_CC,_CC,[_col1,_col2,_col3,0]],[0],_dirPeroid,_dirIntensity,"""", """",""""];" \n
+       "drop [""\A3\data_f\cl_basic"","""",""Billboard"",_spawn, _lifetime,[(_Pos select 0)+_radius*sin _randomdir,(_Pos select 1)+_radius*cos _randomdir,_height],[_right,_forward,_up],5,0.2,0.1568,0,[_size],[[_col1,_col2,_col3,0],_CC,_CC,_CC,_CC,_CC,_CC,[_col1,_col2,_col3,0]],[0],_dirPeroid,_dirIntensity,"""", """",""""];" \n
        "};" \n
        "} else { " \n
        "_time = time + 5;" \n

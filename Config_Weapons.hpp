@@ -26,7 +26,6 @@ class WeaponShops {
             { "hgun_Pistol_heavy_02_F", "", 1000, -1 },
             { "hgun_ACPC2_F", "", 1500, -1 },
             { "hgun_PDW2000_F", "", 5000, -1 },
-            { "optic_ACO_grn_smg", "", 250, 250 },
 			{ "V_Rangemaster_belt", "", 250, 250 }
         };
         mags[] = {
@@ -149,30 +148,7 @@ class WeaponShops {
             { "srifle_DMR_02_camo_F", "", 70000, 0 },
             { "srifle_DMR_05_blk_F", "", 70000, 0 },
             { "MMG_02_black_F", "", 180000, 0 },
-            { "optic_Arco", "", 1000, 0 },
-            { "optic_Aco", "", 1000, 0 },
-            { "optic_Holosight", "", 1000, 0 },
-            { "acc_flashlight", "", 10000, 0 },
-            { "acc_pointer_IR", "", 1000, 0 },
-            { "optic_MRCO", "", 1000, 0 },
-            { "optic_DMS", "", 1000, 0 },
-            { "optic_LRPS", "", 1000, 0 },
-            { "optic_AMS", "", 1000, 0 },
-            { "optic_Hamr", "", 750, 0 },
-			{ "optic_NVS", "", 10000, 0 },
-			{ "optic_tws", "", 20000, 0 },
-            { "bipod_01_F_snd", "", 100, 0 },
-            { "bipod_01_F_blk", "", 100, 0 },
-            { "bipod_02_F_blk", "", 100, 0 },
-            { "bipod_02_F_tan", "", 100, 0 },
-            { "muzzle_snds_acp", "", 500, 0 },
-            { "muzzle_snds_H", "", 500, 0 },
-            { "muzzle_snds_L", "", 500, 0 },
-            { "muzzle_snds_M", "", 500, 0 },
-            { "muzzle_snds_B", "", 500, 0 },
-            { "muzzle_snds_H_MG", "", 500, 0 },
-            { "muzzle_snds_338_green", "", 500, 0 },
-            { "muzzle_snds_93mmg", "", 500, 0 },
+            { "launch_RPG7_F", "", 300000, 0},
             { "NVGoggles", "", 200, 0 },
 			{ "NVGogglesB_blk_F", "", 1000, 0 },
             { "Rangefinder", "", 100, 0 }
@@ -198,7 +174,8 @@ class WeaponShops {
             { "10Rnd_338_Mag", "", 30 },
             { "10Rnd_127x54_Mag", "", 30 },
             { "30Rnd_762x39_Mag_F", "", 30 },
-            { "30Rnd_545x39_Mag_F", "", 30 }
+            { "30Rnd_545x39_Mag_F", "", 30 },
+            { "RPG7_F", "", 5000}
             
         };
         accessories[] = {
